@@ -24,3 +24,42 @@ Arduinoボードに電源を入れた時、リセットしたときに呼び出�
 名前の通り、繰り返し実行される。プログラム本体がある。
 
 電源がきれるまでこの中の処理が繰り返される
+
+# AStar32U4ライブラリ
+
+## ledRed()関数
+
+引数にはブール値。赤いLEDを1でオン、0でオフ
+
+# delay(ms)
+
+プログラムを指定した時間だけ止める。
+
+単位はms(ミリ秒)なので、1秒は1000msに該当する。
+
+型はUL型。もし`32767`より巨大な数値が欲しい時は数値の後ろにULを加える
+
++  delay(60000UL)
+
+
+# gitについて
+
+なにやらmasterは廃止され、mainになったらしい。
+
+```
+git remote add origin https://github.com/otooto/arduino_directory.git
+
+git remote add [URLに紐づけする名前] [リモートリポジトリのURL]
+```
+
+URLが指すリモートリポジトリ先の名前をoriginという名前に設定している。
+
+なので
+
+```
+git push -u origin main
+git push [リモート先のリポジトリ] [ローカルのブランチ名]
+```
+
+今はgit
+
